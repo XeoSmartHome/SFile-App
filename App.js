@@ -4,6 +4,8 @@ import {createAppContainer} from "react-navigation";
 import MainScreen from "./screens/main-screen";
 import EncryptFileScreen from "./screens/encrypt-file-screen";
 import DecryptFileScreen from "./screens/decrypt-file-screen";
+import {XEO_BLUE} from "./styles";
+import {Icon} from "react-native-elements";
 
 
 const BottomNavigator = createMaterialBottomTabNavigator(
@@ -42,11 +44,10 @@ const BottomNavigator = createMaterialBottomTabNavigator(
 		order: ['encrypt_file', 'home', 'decrypt_file'],
 		barStyleLight:{
 			backgroundColor: XEO_BLUE,
-			borderTopWidth: 2,
+			borderTopWidth: 3,
 			borderStyle: 'solid',
 			borderColor: '#d0cfd0',
-			paddingBottom: 5,
-
+			paddingBottom: 10,
 		}
 	}
 );
